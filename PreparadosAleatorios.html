@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Preparados de histo aleatorios</title>
+    <style>
+        .button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <button class="button" onclick='abrirLink()'>Dame un preparado</button>
+
+    <script>
+        function abrirLink() {
+            // Define la lista de enlaces que deseas abrir
+            var listaEnlaces = [
+                'http://www.fvet.uba.ar/histo/prepa203.html',
+                'http://www.fvet.uba.ar/histo/prepa3.html',
+                'http://www.fvet.uba.ar/histo/prepa4.html',
+                'http://www.fvet.uba.ar/histo/prepa100.html',
+                'http://www.fvet.uba.ar/histo/prepa24.html',
+                'http://www.fvet.uba.ar/histo/prepa53.html',
+                'http://www.fvet.uba.ar/histo/prepa8.html',
+                'http://www.fvet.uba.ar/histo/prepa19.html',
+                'http://www.fvet.uba.ar/histo/prepa6.html',
+                'http://www.fvet.uba.ar/histo/prepa83c.html',
+                'http://www.fvet.uba.ar/histo/prepa126.html',
+                'http://www.fvet.uba.ar/histo/prepa33.html',
+                'http://www.fvet.uba.ar/histo/prepa122.html',
+                'http://www.fvet.uba.ar/histo/prepa25c.html',
+                'http://www.fvet.uba.ar/histo/prepa30c.html',
+                'http://www.fvet.uba.ar/histo/prepa129.html',
+                'http://www.fvet.uba.ar/histo/prepa26.html?',
+                'http://www.fvet.uba.ar/histo/prepa127.html?',
+                'http://www.fvet.uba.ar/histo/prepa29.html?',
+                'http://www.fvet.uba.ar/histo/prepa130.html?',
+                'http://www.fvet.uba.ar/histo/prepa78c.html',
+                'http://www.fvet.uba.ar/histo/prepa75c.html',
+                'http://www.fvet.uba.ar/histo/prepa86.html',
+                'http://www.fvet.uba.ar/histo/prepa81c.html',
+                'http://www.fvet.uba.ar/histo/prepa90a.html',
+                'http://www.fvet.uba.ar/histo/prepa70c.html',
+                'http://www.fvet.uba.ar/histo/prepa18.html',
+                'http://www.fvet.uba.ar/histo/prepa131.html',
+                'http://www.fvet.uba.ar/histo/prepa56.html',
+                'http://www.fvet.uba.ar/histo/prepa13.html',
+                'http://www.fvet.uba.ar/histo/prepa9.html',
+                'http://www.fvet.uba.ar/histo/prepa133.html'
+            ];
+
+            // Genera un índice aleatorio basado en la longitud de la lista
+            var indiceAleatorio = Math.floor(Math.random() * listaEnlaces.length);
+
+            // Obtiene el enlace aleatorio
+            var enlaceAleatorio = listaEnlaces[indiceAleatorio];
+
+            // Abre el enlace en una nueva pestaña
+            window.open(enlaceAleatorio, '_blank');
+        }
+    </script>
+</body>
+</html>
